@@ -72,6 +72,7 @@
     .skill-group .tags { margin-top:0; }
     .contact { display:flex; justify-content:space-between; align-items:center; gap:30px; padding:34px; border:1px solid #2b4868; border-radius:22px; background:linear-gradient(110deg,rgba(24,62,99,.48),rgba(13,29,48,.65)); }
     .contact h2 { margin-top:0; }
+    .contact .actions { margin-top:0; }
     footer { padding:28px 0 38px; color:#788ba4; font-size:.82rem; display:flex; justify-content:space-between; gap:20px; }
     .small-note { color:#7589a4; font-size:.78rem; margin-top:13px; }
     @media (max-width:800px) {
@@ -79,6 +80,7 @@
       .grid { grid-template-columns:repeat(2,1fr); }
       .navlinks { gap:13px; font-size:.8rem; }
       .terminal { max-width:560px; }
+      .contact { flex-direction:column; align-items:flex-start; }
     }
     @media (max-width:560px) {
       .wrap { width:min(100% - 30px,var(--max)); }
@@ -87,7 +89,7 @@
       .menu { display:block; color:var(--muted); font-size:.82rem; }
       .grid,.skill-groups { grid-template-columns:1fr; }
       .timeline-item { grid-template-columns:1fr; gap:5px; }
-      .contact, footer { flex-direction:column; align-items:flex-start; }
+      footer { flex-direction:column; align-items:flex-start; }
       section { padding:60px 0; }
     }
   </style>
@@ -122,7 +124,7 @@
         <div class="value">Aiman Sidal</div>
         <div><span class="key">$</span> domaine --list</div>
         <div>• Support informatique</div>
-        <div>• Réseaux & systèmes</div>
+        <div>• Réseaux, systèmes & ESXi</div>
         <div>• Supervision & monitoring</div>
         <div>• Administration & sécurité</div>
         <div><span class="key">$</span> status</div>
@@ -139,9 +141,9 @@
         <p>Mon parcours combine une formation en systèmes et réseaux, une expérience en support informatique et supervision, ainsi que des travaux pratiques sur des environnements réseau et systèmes.</p>
       </div>
       <div class="grid">
-        <article class="card"><div class="icon">⌘</div><h3>Support & assistance</h3><p>Prise en charge des demandes utilisateurs, diagnostic, résolution d'incidents et suivi des équipements.</p></article>
-        <article class="card"><div class="icon">⌁</div><h3>Réseaux</h3><p>Configuration et compréhension des équipements Cisco, segmentation réseau et protocoles de routage.</p></article>
-        <article class="card"><div class="icon">◉</div><h3>Supervision</h3><p>Découverte et configuration d'outils de supervision pour suivre l'état et les performances des infrastructures.</p></article>
+        <article class="card"><div class="icon">⌘</div><h3>Support & assistance</h3><p>Prise en charge des demandes utilisateurs, diagnostic, résolution d'incidents et gestion du parc d'impression via e-BRIDGE CloudConnect.</p></article>
+        <article class="card"><div class="icon">⌁</div><h3>Réseaux & virtualisation</h3><p>Configuration d'équipements Cisco, segmentation réseau, protocoles de routage et administration de machines virtuelles sous VMware ESXi.</p></article>
+        <article class="card"><div class="icon">◉</div><h3>Supervision</h3><p>Découverte et configuration d'outils de supervision pour suivre l'état, la disponibilité et les performances des infrastructures.</p></article>
       </div>
     </div>
   </section>
@@ -151,8 +153,8 @@
       <div class="section-head"><div class="eyebrow">02 / Compétences</div><h2>Environnements & technologies</h2><p>Outils et domaines pratiqués dans le cadre professionnel, de la formation et des laboratoires personnels.</p></div>
       <div class="skill-groups">
         <article class="card skill-group"><h3>Réseaux & équipements</h3><div class="tags"><span class="tag">Cisco IOS</span><span class="tag">VLAN / Trunk</span><span class="tag">STP</span><span class="tag">EtherChannel</span><span class="tag">OSPF</span><span class="tag">BGP</span><span class="tag">VPN</span><span class="tag">HSRP</span></div></article>
-        <article class="card skill-group"><h3>Systèmes & virtualisation</h3><div class="tags"><span class="tag">Windows 10/11</span><span class="tag">Windows Server</span><span class="tag">Linux / Ubuntu</span><span class="tag">VMware</span><span class="tag">Virtualisation</span><span class="tag">NAS Synology</span></div></article>
-        <article class="card skill-group"><h3>Support & supervision</h3><div class="tags"><span class="tag">SolarWinds</span><span class="tag">GLPI</span><span class="tag">Dynamics 365</span><span class="tag">Zabbix</span><span class="tag">Wireshark</span><span class="tag">Inventaire IT</span></div></article>
+        <article class="card skill-group"><h3>Systèmes & virtualisation</h3><div class="tags"><span class="tag">VMware ESXi</span><span class="tag">Gestion de VMs</span><span class="tag">Windows 10/11</span><span class="tag">Windows Server</span><span class="tag">Linux / Ubuntu</span><span class="tag">NAS Synology</span></div></article>
+        <article class="card skill-group"><h3>Support & supervision</h3><div class="tags"><span class="tag">e-BRIDGE CloudConnect</span><span class="tag">Gestion & monitoring d'imprimantes</span><span class="tag">SolarWinds</span><span class="tag">GLPI</span><span class="tag">Dynamics 365</span><span class="tag">Zabbix</span><span class="tag">Wireshark</span><span class="tag">Inventaire IT</span></div></article>
         <article class="card skill-group"><h3>Sécurité & outils</h3><div class="tags"><span class="tag">Fortinet</span><span class="tag">Kaspersky</span><span class="tag">Gestion des permissions</span><span class="tag">Dépannage matériel</span><span class="tag">Apache</span><span class="tag">DHCP / DNS</span></div></article>
       </div>
     </div>
@@ -163,11 +165,11 @@
       <div class="section-head"><div class="eyebrow">03 / Réalisations</div><h2>Projets & travaux pratiques</h2><p>Exemples de sujets techniques à documenter avec des captures d'écran, schémas et procédures. Les descriptions ci-dessous résument des travaux réalisés en formation ou en laboratoire.</p></div>
       <div class="grid">
         <article class="card project"><div class="project-type">Réseaux · Cisco</div><h3>Conception d'un réseau segmenté</h3><p>Mise en place de VLAN, ports trunk, STP et EtherChannel dans un environnement de laboratoire, avec vérification de la connectivité.</p><div class="tags"><span class="tag">Packet Tracer</span><span class="tag">VLAN</span><span class="tag">STP</span></div></article>
+        <article class="card project"><div class="project-type">Virtualisation · ESXi</div><h3>Administration de machines virtuelles ESXi</h3><p>Déploiement, configuration des ressources (vCPU, RAM, stockage, réseaux virtuels) et gestion quotidienne de VMs sous hyperviseur VMware ESXi.</p><div class="tags"><span class="tag">VMware ESXi</span><span class="tag">Virtualisation</span><span class="tag">VMs</span></div></article>
+        <article class="card project"><div class="project-type">Supervision · Impression</div><h3>Monitoring de parc d'impression</h3><p>Gestion centralisée, suivi à distance des compteurs, alertes de consommables et diagnostic des périphériques via e-BRIDGE CloudConnect.</p><div class="tags"><span class="tag">e-BRIDGE CloudConnect</span><span class="tag">Supervision</span></div></article>
         <article class="card project"><div class="project-type">Supervision · Monitoring</div><h3>Prise en main de SolarWinds</h3><p>Installation et configuration de la solution, exploration des fonctionnalités et personnalisation de la plateforme de supervision.</p><div class="tags"><span class="tag">SolarWinds</span><span class="tag">Monitoring</span></div></article>
         <article class="card project"><div class="project-type">Systèmes · Linux</div><h3>Services réseau sous Linux</h3><p>Travaux pratiques autour des services DHCP et DNS, avec configuration d'un environnement Linux et tests de résolution réseau.</p><div class="tags"><span class="tag">Fedora</span><span class="tag">Ubuntu</span><span class="tag">DHCP / DNS</span></div></article>
         <article class="card project"><div class="project-type">Support · ITSM</div><h3>Gestion du support avec GLPI</h3><p>Traitement de demandes de niveau 1 et 2, assistance aux utilisateurs et suivi de l'inventaire du parc informatique.</p><div class="tags"><span class="tag">GLPI</span><span class="tag">Support T1/T2</span></div></article>
-        <article class="card project"><div class="project-type">Systèmes · Windows Server</div><h3>Administration Windows Server</h3><p>Travaux pratiques sur la gestion des comptes, des permissions et des paramètres de sécurité dans un environnement Windows Server.</p><div class="tags"><span class="tag">Windows Server</span><span class="tag">Permissions</span></div></article>
-        <article class="card project"><div class="project-type">Supervision · Zabbix</div><h3>Laboratoire de supervision Zabbix</h3><p>Déploiement d'un environnement de test sous Ubuntu et découverte de la supervision d'un serveur et d'un service web Apache.</p><div class="tags"><span class="tag">Zabbix</span><span class="tag">Ubuntu</span><span class="tag">Apache</span></div></article>
       </div>
       <p class="small-note">Conseil : ajoute progressivement à chaque projet un schéma, 2 à 4 captures anonymisées, les commandes utiles et une courte section « difficultés rencontrées / solution ».</p>
     </div>
@@ -177,10 +179,10 @@
     <div class="wrap">
       <div class="section-head"><div class="eyebrow">04 / Parcours</div><h2>Expérience & formation</h2></div>
       <div class="timeline">
-        <div class="timeline-item"><div class="date">Avril 2026 – Aujourd'hui</div><div><h3>Technicien support & supervision</h3><div class="place">CBI</div><p>Prise en charge des demandes utilisateurs via Dynamics 365, configuration d'équipements Cisco et participation aux activités de supervision avec SolarWinds.</p></div></div>
+        <div class="timeline-item"><div class="date">Avril 2026 – Aujourd'hui</div><div><h3>Technicien support & supervision</h3><div class="place">CBI</div><p>Prise en charge des demandes utilisateurs via Dynamics 365, configuration d'équipements Cisco, supervision avec SolarWinds et gestion du parc d'impression sous e-BRIDGE CloudConnect.</p></div></div>
         <div class="timeline-item"><div class="date">03 – 30 mars 2025</div><div><h3>Stage en réseau informatique</h3><div class="place">Maghreb Steel</div><p>Maintenance et préparation de postes, configuration LAN, support GLPI de niveaux 1 et 2, gestion des permissions Windows Server et découverte d'outils de sécurité et de supervision.</p></div></div>
         <div class="timeline-item"><div class="date">En cours</div><div><h3>Études supérieures</h3><div class="place">ENSET Mohammedia</div><p>Parcours d'études en cours — préciser ici l'intitulé officiel de la filière et l'année universitaire.</p></div></div>
-        <div class="timeline-item"><div class="date">Formation antérieure</div><div><h3>Infrastructure Digitale – option Systèmes et Réseaux</h3><div class="place">OFPPT · ISTA Mohammedia</div><p>Formation orientée infrastructures informatiques, systèmes, réseaux et support technique.</p></div></div>
+        <div class="timeline-item"><div class="date">Formation antérieure</div><div><h3>Infrastructure Digitale – option Systèmes et Réseaux</h3><div class="place">OFPPT · ISTA Mohammedia</div><p>Formation orientée infrastructures informatiques, systèmes, réseaux, virtualisation et support technique.</p></div></div>
         <div class="timeline-item"><div class="date">Parcours universitaire</div><div><h3>Faculté des Sciences et Techniques de Tanger</h3><div class="place">Parcours MIPC · 2 années suivies</div><p>Deux années d'études suivies, sans diplôme obtenu.</p></div></div>
       </div>
     </div>
@@ -189,15 +191,17 @@
   <section id="contact">
     <div class="wrap">
       <div class="contact">
-        <div><div class="eyebrow">05 / Contact</div><h2>Échangeons sur vos besoins IT.</h2><p class="muted">Pour une opportunité professionnelle, une collaboration ou un échange technique.</p></div>
+        <div>
+          <div class="eyebrow">05 / Contact</div>
+          <h2>Échangeons sur vos besoins IT.</h2>
+          <p class="muted">Pour une opportunité professionnelle, une collaboration ou un échange technique : <a href="mailto:aymansidal@gmail.com" style="color:var(--cyan);">aymansidal@gmail.com</a></p>
+        </div>
         <div class="actions">
-          <!-- Remplacez l'adresse e-mail ci-dessous par votre adresse professionnelle. -->
-          <a class="btn primary" href="mailto:VOTRE.EMAIL@EXEMPLE.COM">Envoyer un e-mail ↗</a>
-          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn primary" href="mailto:aymansidal@gmail.com">Envoyer un e-mail ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/aiman-sidal-8594281bb" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/aimansidal" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
       </div>
-      <p class="small-note">Avant publication : remplacez l'e-mail, les liens LinkedIn/GitHub et vérifiez l'intitulé exact de votre formation actuelle.</p>
     </div>
   </section>
 </main>
